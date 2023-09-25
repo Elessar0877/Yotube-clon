@@ -1,0 +1,349 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+} 
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(15, 15, 15);
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(113, 113, 113);
+    border-radius: 20px;
+}
+
+#first-nav { 
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    background-color: rgb(15, 15, 15);
+    z-index: 2;
+}
+
+nav section {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+aside #section-aside {
+    background-color: rgb(15, 15, 15);
+    position: sticky;
+    top: 0; 
+}
+
+.primeraS {
+    width: 15%;
+    background-color: rgb(15, 15, 15);
+}
+
+.primeraS aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(15, 15, 15);
+    width: 200px;
+    height: 100vh;   
+}
+
+.primeraS aside:hover {
+    overflow-y: scroll;
+}
+
+aside .divprincipal1 {
+    border: 1px solid rgb(34, 34, 34);
+    border-top: 0;
+    border-right: 0;
+    height: 155px;
+}
+
+aside .divprincipal2 {
+    border: 1px solid rgb(34, 34, 34);
+    border-right: 0;
+    height: 115px;
+}
+
+aside .divprincipal3 {
+    border: 1px solid rgb(34, 34, 34);
+    border-right: 0;
+    height: 293px;
+}
+
+aside .divprincipal4 {
+    border: 1px solid rgb(34, 34, 34);
+    border-right: 0;
+    height: 245px;
+}
+
+aside .divprincipal5 {
+    border: 1px solid rgb(34, 34, 34);
+    border-right: 0;
+    height: 203px;
+}
+
+aside .prueba1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+    width: 170px;
+    height: 35px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+}
+
+.prueba1:hover {
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+footer {
+    border-right: 0;
+    padding: 20px;
+    width: 190px;
+    height: 240px;
+}
+
+nav section #hambur {
+    display: none;
+}
+
+#hambur:checked ~ aside {
+    display: none;
+}
+
+.primeraS img {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 1;
+}
+
+.primeraS label img:hover {
+    background-color: rgb(39, 39, 39);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.primeraS a img {
+    width: 100px;
+    left: 70px; 
+}
+
+.primeraS #ve {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(170, 170, 170);
+    left: 170px;
+    top: 13px;
+    z-index: 1;
+}
+
+.segundaS {
+    position: relative;
+    background-color: rgb(15, 15, 15);
+    width: 50%;
+}
+
+.segundaS input {
+    position: absolute;
+    background-color: rgb(15, 15, 15);
+    left: 40px;
+    padding: 10px;
+    width: 83.5%;
+    height: 38px;
+    border-radius: 25px;
+    border: 2px solid rgb(34, 34, 34);
+}
+
+.segundaS #search {
+    position: absolute;
+    left: 570px;
+    background: none;
+    border-radius: 0 25px 25px 0;
+    border: 2px solid rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
+    padding: 7px 10px 0 30px;
+    cursor: pointer;
+}
+
+.segundaS #voice {
+    position: absolute;
+    left: 650px;
+    background-color: rgb(34, 34, 34);
+    padding: 7px;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.segundaS #voice:hover {
+    background-color: rgb(61, 61, 61);
+}
+
+.terceraS {
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    padding-right: 15px;
+    width: 15%;
+    justify-content: end;
+    gap: 20px;
+}
+
+.terceraS button {
+    background: none;
+    padding: 10px;
+    border: none;
+}
+
+.terceraS button:hover {
+    background-color: rgb(39, 39, 39);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#sec-nav {
+    position: sticky;
+    top: 57px;
+    display: flex;
+    padding: 25px;
+    padding-left: 250px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(15, 15, 15);
+    height: 50px;
+}
+
+.sec-nav-b {
+    height: 35px;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(39, 39, 39);
+}
+
+.sec-nav-b:hover {
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+.img-button {
+    width: 40px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(39, 39, 39);
+}
+
+.img-button:hover {
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+#sec-aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 2px;
+    background-color: rgb(15, 15, 15);
+    width: 70px;
+    height: 290px;
+    z-index: 1;
+}
+
+#sec-aside span {
+    font-size: 11px;
+}
+
+.sec-aside-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 95%;
+    height: 65px;
+    background-color: rgb(15, 15, 15);
+}
+
+.sec-aside-nav:hover {
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+main {  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(15, 15, 15);
+    padding-top: 1%;
+    padding-left: 17%;
+    height: auto;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+    width: 370px;
+    height: 285px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+}
+
+main div .videos {
+    width: 370px;
+    border-radius: 20px;
+}
+
+main div .videos:hover {
+    border-radius: 0%;
+}
+
+main div .canal {
+    width: 40px;
+    border-radius: 20px;  
+}
+
+main div span {
+    padding-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .terceraS {
+        display: none;
+    }
+
+    .segundaS #search {
+        display: none;
+    }
+    
+    .segundaS #voice {
+        display: none;
+    }
+
+    .segundaS input { 
+        left: 0;
+    }
+
+    #sec-nav {
+        overflow: hidden;
+    }
+}
+
